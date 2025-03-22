@@ -1,0 +1,85 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logout-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+h2 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.log-btn {
+  background: transparent;
+  border: none;
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.log-btn:hover {
+  color: #e74c3c;
+}
+
+.tabs {
+  display: flex;
+  gap: 15px;
+}
+
+.tab-btn {
+  background: transparent;  /* No background color */
+  color: gray;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* Active tab style */
+.tab-btn.active {
+  color: blue;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: blue;
+}
+
+/* Hover effect - only changes text color, no background */
+.tab-btn:hover {
+  color: blue;
+  background: transparent;  /* Ensures no background color */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .tab-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .log-btn {
+    font-size: 18px;
+  }
+}
